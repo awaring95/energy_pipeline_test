@@ -1,0 +1,40 @@
+# ==============================================================================
+# THE ULTIMATE DATA ENGINEERING GITIGNORE TEMPLATE
+# ==============================================================================
+
+# 1. Python Environment & Execution Trash
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.ipynb_checkpoints/
+
+# 2. Operating System & IDE Garbage
+.DS_Store
+Thumbs.db
+.vscode/
+
+# 3. Local Databases & Heavy Datasets
+*.duckdb
+*.duckdb-wal
+*.csv
+*.xlsx
+*.parquet
+data/raw/
+data/processed/
+
+# 4. Secrets and Credentials
+.env
+*.env
+
+# 5. Ephemeral Pipeline State & LLM Scratchpads
+.mapping_key.json
+prompt_scratchpad.txt
+scratchpad.sql
+scratchpad.py
+debug_failed.sql
+debug_failed.py
+*.log
+
+# 6. Documentation Artifacts
+data_work_skill.md
